@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Merriweather+Sans:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Merriweather+Sans&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Merriweather+Sans&family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Merriweather+Sans&family=Righteous&family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Cookie&family=Merriweather+Sans&family=Righteous&family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* GENERAL */
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+.rating-img{
+  width: 9rem;
+  /* height: 1rem; */
+}
+.price{
+  color: rgb(5, 92, 5);
+  font-size: 1rem;
+  font-weight: bold;
+}
+.rating{
+
+  text-align: center;
+}
+.container-fluid {
+  /* margin: 1% 10%; */
+  padding: 1% 12%;
+}
+
+p {
+  color: grey;
+  line-height: 2;
+}
+
+.logo {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.input {
+  margin: 2rem;
+  text-align: center;
+  width: 50%;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background: #e8e8e8;
+  box-shadow: 5px 5px 15px #c5c5c5, -2px -2px 5px #ffffff;
+  transition: 0.3s;
+  border-bottom-right-radius: 0rem;
+  border-top-right-radius: 0rem;
+}
+
+.input:focus {
+  outline-color: #e8e8e8;
+  background: #e8e8e8;
+  box-shadow: inset 20px 20px 60px #c5c5c5,
+    inset -20px -20px 60px #ffffff;
+  transition: 0.3s;
+}
+
+#flight-img-logo {
+  height: 2rem;
+  z-index: 4;
+}
+
+#flight-submit-button {
+  position: relative;
+  left: -2rem;
+  top: -0.2rem;
+  border: none;
+  height: 2.5rem;
+  width: 5rem;
+  box-shadow: 5px 5px 15px #c5c5c5, -2px -2px 5px #ffffff;
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: rgba(32, 4, 82, 0.694);
+  /* z-index: -1; */
+}
+#flight-submit-button:hover{
+  background-color: rgba(33, 4, 82, 0.196);
+  transition: 0.4s;
+}
+
+.font-2 {
+  font-family: 'Righteous', cursive;
+  font-size: 3.5rem;
+  color: #5c5252bd;
+}
+.carousel-item h1{
+  color: rgb(239, 47, 47);
+  font-family: 'Righteous', cursive;
+}
+.trip-btn{
+  background-color: #68c4f9;
+  margin: 0 2rem;
+  font-size: 1.5rem;
+  margin: 0rem 1rem;
+  border-radius: 20%;
+  border: none;
+  padding: 0.6rem;
+  color: white;
+}
+.trip-btn:hover{
+
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 500ms;
+  background-color: rgba(135, 73, 207, 0.6);
+}
+
+#flight-logo {
+  /* position: absolute; */
+}
+
+
+
+
+
+
+
+
+/* TITLE */
+/* #burger-fries{
+    position: absolute;
+    top: 21%;
+    right: 3%;
+    width: 36%;
+} */
+#title .row {
+  padding-bottom: 2.5rem;
+}
+
+.title-btn {
+  border-radius: 20%;
+  color: white;
+  background-color: rgba(255, 47, 47, 0.708);
+  padding: 0.5rem;
+  margin: 1rem 1rem;
+}
+
+.title-img {
+  padding: 3rem;
+  margin-left: 1rem;
+  width: 38%;
+  position: absolute;
+  right: 9%;
+  top: 14%;
+
+}
+
+.navbar {
+  margin-bottom: 1rem;
+  /* position: fixed; */
+}
+
+#pp {
+  color: rgb(255, 242, 56);
+}
+
+
+
+.navbar-brand {
+  font-size: 3.5rem;
+  font-family: 'Righteous', cursive;
+  /* font-weight: bold; */
+  color: rgb(255, 255, 255);
+}
+.navbar-brand:hover{
+  color: rgba(223, 157, 124, 0.806);
+  transition: 1s;
+}
+
+#title {
+  background-image: radial-gradient(ellipse farthest-corner at -10% 250%, #933afff0 20%, #20fcea69 80%, #00b0fb7b 80%);
+  /* background-color: rgba(114, 187, 255, 0.614); */
+  /* padding: 2% 5%; */
+  width: 100%;
+  position: relative;
+  /* background-image: radial-gradient(ellipse farthest-corner at -10% 250%, #5eff3a3d 20%, #fc832069 80%,  #fb9f005e 80%); */
+}
+
+
+#title h1 {
+  font-family: 'Cookie', cursive;
+  color: rgb(255, 255, 255);
+  font-size: 6rem;
+  font-weight: 200;
+}
+
+.nav-link {
+  font-size: 1rem;
+  margin: 0 0.3rem;
+  color: rgb(87, 52, 201);
+}
+.nav-link:hover{
+  color: rgba(206, 168, 99, 0.733) ;
+  transition: 0.3s;
+}
+
+/* FEATURES */
+#destination-logo {
+  margin-bottom: 2rem;
+  position: static;
+}
+
+.logo1 {
+  height: 12rem;
+  width: 15rem;
+  margin-bottom: 0.5rem;
+  /* display: inline-block; */
+}
+
+.feature-card {
+  text-align: center;
+  margin: 1rem 1rem;
+  /* width: 25%; */
+  padding: 1.5rem;
+  /* width: 100%; */
+  /* height: 254px; */
+  background: rgb(250 233 222 / 28%);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.features {
+  /* background-color: rgba(110, 201, 110, 0.151) ; */
+  background-color: white;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+#features {
+  /* background-color: rgb(43, 67, 67); */
+  padding: auto;
+}
+
+/* SPECIALS -CAROUSEL IMG */
+#special {
+  /* background-color:rgba(110, 201, 110, 0.151); */
+  background-color: rgba(7, 32, 255, 0.189);
+  /* padding: 2% 5%; */
+  width: 100%;
+  position: relative;
+  margin-bottom: 4rem;
+
+}
+
+.carousel-img {
+  position: relative;
+  height: 30rem;
+  margin-bottom: 1.5rem;
+}
+
+.carousel-item {
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.carousel-control-1 {
+  background-color: rgba(162, 162, 162, 0.393);
+}
+#offer-img{
+  height: 5rem;
+  position: absolute;
+  bottom: 12rem;
+  right: 31rem;
+
+}
+
+/* MENU */
+#menu .container-fluid .row1{
+  display: flex;
+  overflow-x: auto;
+}
+.card-img {
+  height: 11rem;
+  min-width: 150px;
+  /* width: 100%;
+  height: 60%; */
+}
+
+.card {
+ min-width: 215px;
+    /* height: 274px;  */
+  background: white;
+  padding: 0.5rem;
+  margin: 1rem 0.3rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.card-image {
+  padding: 1rem;
+ min-width: 190px;
+  background-color: rgb(236, 236, 236);
+  
+  border-radius: 6px 6px 0 0;
+}
+
+.card-image:hover {
+  transform: scale(0.98);
+  transition: 0.3s;
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgb(63, 121, 230);
+  padding: 10px 7px 0;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
+}
+
+.heading:hover {
+  cursor: pointer;
+}
+
+
+
+/* menu-section-2 */
+.menu-section-2{
+  /* margin: 1rem; */
+  /* padding: 3rem; */
+}
+
+.menu-section-2 .row1{
+  display: flex;
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+.menu-section-2-part{
+  margin-right: 4rem;
+}
+.menu-section-2 h1{
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+.menu-section-2-part .card{
+  min-width: 200px;
+}
+.menu-section-2-part .card-image{
+  min-width: 180px;
+}
+.menu-section-2-part .card-img{
+  min-width: 160px;
+}
+
+
+
+/* ABOUT AND ORDER */
+#about h2{
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(12, 0, 54);
+  font-family: 'Ubuntu', sans-serif;
+}
+#about {
+  background-color: rgba(7, 32, 255, 0.189);
+  padding-bottom: 4rem ;
+  padding-top: 4rem ;
+  width: 100%;
+  position: relative;
+
+
+}
+
+.about-order {
+  text-align: center;
+  margin: 5rem 2rem;
+}
+
+
+/* TRIP_FORM */
+#trip-form{
+  padding: 5rem;
+
+}
+#trip-form h1{
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: rgb(17, 0, 32);
+  font-weight: bold;
+}
+
+/* CONTACT */
+.profile-logo {
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.social-logo {
+  height: 3rem;
+  /* border-radius: 50%; */
+}
+
+#contact {
+  background-color: rgba(7, 32, 255, 0.189);
+  /* padding: 2% 5%; */
+  width: 100%;
+  position: relative;
+
+}
+
+#contact-div {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1100px) {
+  #offer-img{
+    position: static;
+  }
+  .title-img {
+    position: absolute;
+    z-index: 1;
+    margin-left: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .title-btn {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    margin: 1rem 0.7rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width:1000px) {
+  .title-img {
+    /* display: block; */
+    position: static;
+    /* position: absolute; */
+    z-index: 1;
+    /* margin: 1rem 4rem;  */
+    height: 15rem;
+    width: 17rem;
+  }
+
+  #title {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .carousel-img {
+    position: relative;
+    height: 15rem;
+  }
+  #destination-logo{
+    width: 50%;
+  }
+
+}
+
+@media (max-width:400px) {
+  #flight-submit-button {
+    width: 3rem;
+    left: -2rem;
+  }
+  .logo1{
+    height: 80%;
+    width: 80%;
+  }
+  #title h1{
+    font-size: 4rem;
+  }
+  .font-2{
+    font-size: 2.6rem;
+  }
+  .carousel-item h1{
+    font-size: 2rem;
+  }
+  #trip-form h1{
+    font-size: 2rem;
+  }
+  
+.card-img {
+  
+  min-width: 140px;
+ 
+}
+
+.card {
+ min-width: 190px;
+ 
+}
+
+.card-image {
+  
+ min-width: 170px;
+  
+}
+.row1{
+  margin:0;
+}
+#trip-form{
+  margin: 0;
+  padding: 0;
+}
+
+}
